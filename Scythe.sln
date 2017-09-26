@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scythe", "Scythe\Scythe.csproj", "{9423F988-0167-4F04-9D2F-6C3DC2BE99C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScytheTest", "ScytheTest\ScytheTest.csproj", "{0D7433E6-1704-4B57-A27C-D8269B7E3C0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScytheConsole", "ScytheConsole\ScytheConsole.csproj", "{D8A92A11-F978-4C5B-8DC7-7877C7CC59A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9423F988-0167-4F04-9D2F-6C3DC2BE99C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9423F988-0167-4F04-9D2F-6C3DC2BE99C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9423F988-0167-4F04-9D2F-6C3DC2BE99C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9423F988-0167-4F04-9D2F-6C3DC2BE99C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D7433E6-1704-4B57-A27C-D8269B7E3C0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D7433E6-1704-4B57-A27C-D8269B7E3C0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D7433E6-1704-4B57-A27C-D8269B7E3C0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D7433E6-1704-4B57-A27C-D8269B7E3C0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8A92A11-F978-4C5B-8DC7-7877C7CC59A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8A92A11-F978-4C5B-8DC7-7877C7CC59A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8A92A11-F978-4C5B-8DC7-7877C7CC59A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8A92A11-F978-4C5B-8DC7-7877C7CC59A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
