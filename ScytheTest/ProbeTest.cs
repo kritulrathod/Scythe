@@ -6,35 +6,38 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace ScytheTest
 {
     [TestClass]
-    public class ScytheTest
+    public class ProbeTest
     {
         [TestMethod]
-        public void GivenScythe_WhenReadConfig_ThenReturnPath()
+        public void GivenProbe_WhenInitialize_ThenCreatesDirectoryForProbeFiles()
         {
             //Arrange
             string path = Helper.Path;
+            if (Directory.Exists(path))
+                Directory.Delete(path, true);
 
-            var scythe = new Probe(path);
             //Act
-            var m = Directory.Exists(path);
+            Probe.Initialize(path);
 
             //Assert
             Assert.IsTrue(Directory.Exists(path));
         }
 
         [TestMethod]
-        public void GivenScythe_WhenMarkerCalled_ThenProbesMarker()
+        public void GivenProbe_WhenMarkerCalled_ThenProbesMarker()
         {
             //Arrange
             string path = Helper.Path;
-            var scythe = new Probe(path);
+            Probe.Initialize(path);
+
             string marker = "First_Marker";
 
             //Act
-            Probe.SetMarkTime(marker, new DateTime(1984, 01, 01));
+            Probe.TouchMarker(marker, new DateTime(1984, 01, 01));
 
             //Assert
-            Assert.IsTrue(Directory.Exists(path));
+            Assert.IsTrue(Directory.Exists(path), "Marker File Not Found");
+            Assert.AreEqual(File.GetLastWriteTime(Probe.FormulateMarkerPath(marker)).Date, new DateTime(1984, 01, 01), "Marker File Not Found");
         }
 
     }
